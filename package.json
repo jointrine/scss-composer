@@ -1,0 +1,19 @@
+{
+  "name": "scss-composer",
+  "version": "0.0.1",
+  "description": "Composes SCSS main file based on configuration",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://niclassahlin@github.com/niclassahlin/scss-composer.git"
+  },
+  "author": "Niclas Sahlin <niclas@niclassahlin.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niclassahlin/scss-composer/issues"
+  },
+  "homepage": "https://github.com/niclassahlin/scss-composer#readme"
+}
