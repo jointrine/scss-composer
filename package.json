@@ -1,10 +1,13 @@
 {
   "name": "scss-composer",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Composes SCSS main file based on configuration",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
+  "files": [
+    "lib/"
+  ],
   "scripts": {
-    "test": "gulp test"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,20 @@
   "bugs": {
     "url": "https://github.com/niclassahlin/scss-composer/issues"
   },
-  "homepage": "https://github.com/niclassahlin/scss-composer#readme"
+  "homepage": "https://github.com/niclassahlin/scss-composer#readme",
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "chai": "^3.5.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^2.13.0",
+    "mocha": "^2.4.5",
+    "require-dir": "^0.3.0",
+    "vinyl-paths": "^2.1.0"
+  },
+  "dependencies": {
+    "through2": "^2.0.1",
+    "vinyl": "^1.1.1",
+    "vinyl-fs": "^2.4.3"
+  }
 }
