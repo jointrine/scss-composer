@@ -17,7 +17,7 @@ export class ScssComposer {
     return [
       new File({
         path: "./configuration.json",
-        contents: new Buffer(JSON.stringify(this._configuration.modules))
+        contents: new Buffer(JSON.stringify(this._configuration))
       })
     ]
   }

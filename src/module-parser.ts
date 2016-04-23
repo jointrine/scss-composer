@@ -1,23 +1,18 @@
 import {IConfigDeclaration} from "./config-loader";
 
 export class ModuleParser {
-  /**
-   *
-   */
-  constructor() {
-    
-  }
   
   public parse(declaration: IConfigDeclaration): IConfiguration {
     const configuration = {
       modules: []
     };
     for (var name in declaration.modules) {
-      if (declaration.hasOwnProperty(name)) {
-        var element = declaration[name];
+      //if (declaration.hasOwnProperty(name)) {
+        var element = declaration.modules[name];
         const module = new Module(name, element);
+        console.log(element);
         configuration.modules.push(module);
-      }
+      //}
     }
     
     return configuration;
