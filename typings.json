@@ -1,0 +1,14 @@
+{
+  "name": "scss-composer",
+  "version": false,
+  "dependencies": {
+    "chai": "registry:npm/chai#3.5.0+20160415060238",
+    "through2": "registry:npm/through2#2.0.0+20160308004148"
+  },
+  "ambientDependencies": {
+    "mocha": "registry:dt/mocha#2.2.5+20160317120654",
+    "node": "registry:dt/node#4.0.0+20160412142033",
+    "vinyl": "registry:dt/vinyl#1.1.0+20160316155526",
+    "vinyl-paths": "registry:dt/vinyl-paths#0.0.0+20160316155526"
+  }
+}
