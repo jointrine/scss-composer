@@ -7,12 +7,11 @@ export class ModuleParser {
       modules: []
     };
     for (var name in declaration.modules) {
-      //if (declaration.hasOwnProperty(name)) {
+      if (declaration.hasOwnProperty(name)) {
         var element = declaration.modules[name];
         const module = new Module(name, element);
-        console.log(element);
         configuration.modules.push(module);
-      //}
+      }
     }
     
     return configuration;
@@ -23,8 +22,6 @@ export interface IConfiguration {
   modules: Module[];
 }
 
-
-
 export class Module {
   public name: string;
   public fileName: string;
@@ -33,9 +30,6 @@ export class Module {
   
   private static _fileCheckRegex = /\.scss$/;
   
-  /**
-   *
-   */
   constructor(name: string, includes: string[]) {
     const nameConfiguration = this._parseNameConfig(name);
     this.name = nameConfiguration.name;

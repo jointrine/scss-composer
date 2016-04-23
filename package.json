@@ -6,19 +6,16 @@
   "files": [
     "lib/"
   ],
-  "scripts": {
-    "test": "ava"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://niclassahlin@github.com/niclassahlin/scss-composer.git"
+    "url": "https://github.com/jointrine/scss-composer.git"
   },
   "author": "Niclas Sahlin <niclas@niclassahlin.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/niclassahlin/scss-composer/issues"
+    "url": "https://github.com/jointrine/scss-composer/issues"
   },
-  "homepage": "https://github.com/niclassahlin/scss-composer#readme",
+  "homepage": "https://github.com/jointrine/scss-composer",
   "devDependencies": {
     "ava": "^0.14.0",
     "chai": "^3.5.0",
