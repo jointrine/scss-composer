@@ -9,12 +9,10 @@ function composer() {
       composer.writeFiles().forEach(file => {
         fileStream.push(file);
       });
-      console.log("changed file")
     } else {
       fileStream.push(file);
     }
     
-    console.log("wrote file");
     callback();
   });
 }

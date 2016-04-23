@@ -29,6 +29,7 @@ export class Module {
   public name: string;
   public fileName: string;
   public includeFiles: string[];
+  public content: string;
   
   private static _fileCheckRegex = /\.scss$/;
   
