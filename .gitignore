@@ -35,3 +35,5 @@ node_modules
 lib/
 typings/
 test
+!src/lib/
+!src/test/

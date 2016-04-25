@@ -14,5 +14,5 @@ gulp.task("clean", () => {
 gulp.task("build", ["clean"], () => {
   return tsProject.src()
     .pipe(ts(tsProject))
-    .pipe(gulp.dest(paths.dist));
+    .pipe(gulp.dest(paths.root));
 });
