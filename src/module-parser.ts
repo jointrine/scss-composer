@@ -7,7 +7,7 @@ export class ModuleParser {
       modules: []
     };
     for (var name in declaration.modules) {
-      if (declaration.hasOwnProperty(name)) {
+      if (declaration.modules.hasOwnProperty(name)) {
         var element = declaration.modules[name];
         const module = new Module(name, element);
         configuration.modules.push(module);
